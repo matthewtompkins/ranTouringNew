@@ -215,6 +215,10 @@ html {
         position: absolute;
         transition: .3s;
         width: 100%; }
+        @media only screen and (max-width: 700px) {
+          html #artists .row .artistDiv .artistHover {
+            bottom: 0;
+            opacity: .8; } }
         html #artists .row .artistDiv .artistHover h1 {
           color: #fffbff; }
         html #artists .row .artistDiv .artistHover p {

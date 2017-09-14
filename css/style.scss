@@ -224,6 +224,11 @@ html {
                   transition: .3s;
                   width: 100%;
 
+                    @include responsive(small-screen) {
+                      bottom: 0;
+                      opacity: .8;
+                    }
+
                       h1 {
                         color: $white;
                       }

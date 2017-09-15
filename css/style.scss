@@ -116,6 +116,10 @@ html {
           opacity: .4;
           transform: rotate(-45deg);
           width: 40px;
+
+            @include responsive(small-screen) {
+              display: none;
+            }
         }
     }
 
@@ -180,6 +184,10 @@ html {
                   background: url("../img/DickValentine.jpg") no-repeat center;
                   background-position: 0% 15%;
                   background-size: cover;
+
+                    @include responsive(small-screen) {
+                      background-position: 0% 23%;
+                    }
                 }
 
                 #electricSix {
@@ -190,6 +198,7 @@ html {
 
                 #mWaM {
                   background: url("../img/ManWithAMission.jpg") no-repeat center;
+                  background-position: 50% 0%;
                   background-size: cover;
                 }
 
@@ -200,17 +209,42 @@ html {
 
                 #shonenKnife {
                   background: url("../img/Shonen Knife.jpg") no-repeat center;
+                  background-position: 50% 0%;
                   background-size: cover;
+
+                    @include responsive(small-screen) {
+                      background-position: 0% 20%;
+                    }
                 }
 
                 #stEtienne {
                   background: url("../img/stEtienne.jpg") no-repeat center;
+                  background-position: 0% 10%;
                   background-size: cover;
+
+                    @include responsive(small-screen) {
+                      background-position: 0% 40%;
+                    }
                 }
 
                 #wedsCamp {
                   background: url("../img/wedsCamp.jpg") no-repeat center;
                   background-position: 0% 10%;
+                  background-size: cover;
+
+                    @include responsive(small-screen) {
+                      background-position: 0% 25%;
+                    }
+                }
+
+
+                #goKart {
+                  background: url("../img/goKart.jpg") no-repeat center;
+                  background-size: cover;
+                }
+
+                #southPark {
+                  background: url("../img/southPark.jpg") no-repeat center;
                   background-size: cover;
                 }
 
@@ -245,7 +279,7 @@ html {
 
     #contact {
       align-items: center;
-      background: url("../img/vitor-santos-62290.png") no-repeat center;
+      background: url("../img/antoine-barres-198891.jpg") no-repeat center;
       background-attachment: fixed;
       background-size: cover;
       display: flex;
@@ -290,7 +324,7 @@ html {
               }
 
               .inputDiv {
-                margin-bottom: 1em;
+                margin-bottom: 1.5em;
                 margin-top: 1em;
                 position: relative;
 
@@ -402,6 +436,11 @@ html {
           position: absolute;
           right: -100%;
           transition: .6s;
+
+            @include responsive(small-screen) {
+              right: 0;
+              width: 100%;
+            }
 
             a {
               color: $red;

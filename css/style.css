@@ -143,6 +143,9 @@ html {
       opacity: .4;
       transform: rotate(-45deg);
       width: 40px; }
+      @media only screen and (max-width: 700px) {
+        html #landing .downArrow {
+          display: none; } }
   html #artists {
     background: #2b2922;
     box-shadow: 0 8px 6px rgba(10, 10, 10, 0.3);
@@ -186,25 +189,46 @@ html {
         background: url("../img/DickValentine.jpg") no-repeat center;
         background-position: 0% 15%;
         background-size: cover; }
+        @media only screen and (max-width: 700px) {
+          html #artists .row .artistDiv #dickValentine {
+            background-position: 0% 23%; } }
       html #artists .row .artistDiv #electricSix {
         background: url("../img/electricsix1400.jpg") no-repeat;
         background-position: top center;
         background-size: cover; }
       html #artists .row .artistDiv #mWaM {
         background: url("../img/ManWithAMission.jpg") no-repeat center;
+        background-position: 50% 0%;
         background-size: cover; }
       html #artists .row .artistDiv #mutantMonster {
         background: url("../img/MutantMonster.jpg") no-repeat center;
         background-size: cover; }
       html #artists .row .artistDiv #shonenKnife {
         background: url("../img/Shonen Knife.jpg") no-repeat center;
+        background-position: 50% 0%;
         background-size: cover; }
+        @media only screen and (max-width: 700px) {
+          html #artists .row .artistDiv #shonenKnife {
+            background-position: 0% 20%; } }
       html #artists .row .artistDiv #stEtienne {
         background: url("../img/stEtienne.jpg") no-repeat center;
+        background-position: 0% 10%;
         background-size: cover; }
+        @media only screen and (max-width: 700px) {
+          html #artists .row .artistDiv #stEtienne {
+            background-position: 0% 40%; } }
       html #artists .row .artistDiv #wedsCamp {
         background: url("../img/wedsCamp.jpg") no-repeat center;
         background-position: 0% 10%;
+        background-size: cover; }
+        @media only screen and (max-width: 700px) {
+          html #artists .row .artistDiv #wedsCamp {
+            background-position: 0% 25%; } }
+      html #artists .row .artistDiv #goKart {
+        background: url("../img/goKart.jpg") no-repeat center;
+        background-size: cover; }
+      html #artists .row .artistDiv #southPark {
+        background: url("../img/southPark.jpg") no-repeat center;
         background-size: cover; }
       html #artists .row .artistDiv .artistHover {
         background: #a52400;
@@ -227,7 +251,7 @@ html {
           text-transform: lowercase; }
   html #contact {
     align-items: center;
-    background: url("../img/vitor-santos-62290.png") no-repeat center;
+    background: url("../img/antoine-barres-198891.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -262,7 +286,7 @@ html {
         html #contact #contactDiv form #contactBack {
           cursor: pointer; }
         html #contact #contactDiv form .inputDiv {
-          margin-bottom: 1em;
+          margin-bottom: 1.5em;
           margin-top: 1em;
           position: relative; }
           html #contact #contactDiv form .inputDiv input {
@@ -351,6 +375,10 @@ html {
       position: absolute;
       right: -100%;
       transition: .6s; }
+      @media only screen and (max-width: 700px) {
+        html #contact #contactFooter {
+          right: 0;
+          width: 100%; } }
       html #contact #contactFooter a {
         color: #a52400;
         text-decoration: none; }

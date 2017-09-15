@@ -81,14 +81,22 @@ var scrollListen = $(window).scroll( function() {
   if ( $(window).scrollTop() >= ( contact.offset().top - 50 ) ) {
 
     contactDiv.css("margin-top", "0");
-    contactFooter.css("right", "0");
     navBarDiv.css("background", "#2b2922");
+
+      if ( $(window).width() > 700 ) {
+
+        contactFooter.css("right", "0");
+      }
 
   } else if ( $(window).scrollTop() <= ( contact.offset().top - 200 ) )  {
 
     contactDiv.css("margin-top", "200%");
-    contactFooter.css("right", "-100%");
     navBarDiv.css("background", "rgba(10,10,10,.4)");
+
+    if ( $(window).width() > 700 ) {
+      
+      contactFooter.css("right", "-100%");
+    }
 
   }
 
